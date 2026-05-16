@@ -3,7 +3,17 @@ main();
 function main(){
     menuportfolio();
 }
- function menusalida(){
+function crearportafolio() {
+    console.log("---------------------CREA TU PORTFOLIO TOTALMENTE GRATIS-----------------------------");
+    console.log("-------------------------COMPLETA TODOS LOS CAMPOS----------------------------------------");
+    const nombre = String(input("Ingrese el nombre de su perfil:\n"));
+    const activos = String(input("Ingrese el nombre de los activos:\n"));
+    const dinero_inversion = Number(input("Ingrese la cantidad de dinero a invertir inicialmente:\n"));
+    const porcentaje_activo = Number(input("Ingrese que porcentaje le va a poner a cada activo:\n"));
+    const req_funcionales = [nombre, activos, dinero_inversion, porcentaje_activo];
+    const perfiles = [req_funcionales];
+}
+function menusalida(){
     console.log("Hasta la proxima!");   
     }
 function menuportfolio(){
@@ -15,7 +25,7 @@ function menuportfolio(){
     console.log("3-salir");
     const eleccion_usuario = Number(input("Ingresa un numero: "));
     switch (eleccion_usuario) {
-        case 1:
+        case 1:crearportafolio();
             break;
         case 2:
             break;
@@ -24,5 +34,4 @@ function menuportfolio(){
         default: console.log("Opcion invalida");
             break;
     }
-
 }
