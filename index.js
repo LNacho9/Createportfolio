@@ -12,6 +12,7 @@ function crearportafolio() {
     const porcentaje_activo = Number(input("Ingrese que porcentaje le va a poner a cada activo:\n"));
     const req_funcionales = [nombre, activos, dinero_inversion, porcentaje_activo];
     const perfiles = [req_funcionales];
+    console.log("El nombre de su perfil es: " + nombre,", los activos de su perfil son: " + activos +", el dinero de su inversion es: " + dinero_inversion);
 }
 function menusalida(){
     console.log("Hasta la proxima!");   
